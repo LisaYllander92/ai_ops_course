@@ -1,17 +1,30 @@
 # AI-OPS course 
 
-## Setup
-### Initialize a new project:
+# Setup: NVIDIA + Pydantic AI
+
+## 1. Initiera projektet
 
 ```bash
 uv init --no-package --python 3.13
 ```
-### Install dependencies
+
+## 2. Skapa konto och API-nyckel hos NVIDIA
+
+1. Skapa ett konto på NVIDIA (build.nvidia.com).
+2. Skapa en API-nyckel. Du kan döpa om nyckeln när du skapar den, vilket är bra om du har flera nycklar.
+3. Kopiera nyckeln till en `.env`-fil i projektets rotmapp:
+
+```env
+NVIDIA_API=nvapi-xxxxxxxxxxxxxxxx
+```
+
+> Lägg till `.env` i `.gitignore` så att nyckeln inte hamnar på GitHub.
+
+## 3. Installera dependencies
 
 ```bash
 uv add pandas pydantic-ai ipykernel
 ```
-
 
 
 ## Terminology

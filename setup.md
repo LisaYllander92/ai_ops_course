@@ -72,4 +72,37 @@ result
 print(result.output)
 ```
 
+# LLM intro
+
+Nu när modellen är konfigurerad (se `nvidia-pydantic-ai-setup.md`) kan vi ge agenten en personlighet med en **system prompt**.
+
+## Agent med system prompt
+
+```python
+# Skapa en agent med NVIDIA-modellen från tidigare setup
+# system_prompt styr hur modellen beter sig i alla svar (roll, ton, format)
+agent = Agent(
+    model=model,
+    system_prompt=(
+        "You are funny joking bot, "       # Rollen: en rolig bot
+        "answer shortly in a nerdy style, " # Stilen: kort och nördig
+        "also add emojis"                   # Formatet: lägg till emojis
+    ),
+)
+
+# Användarens fråga (user prompt), det vi faktiskt vill ha svar på
+prompt = "Explain what PydanticAI is and the difference between it and Pydantic"
+
+# Kör agenten asynkront (notebooks stödjer top-level await)
+result = await agent.run(prompt)
+
+# Skriver ut enbart modellens textsvar, utan extra metadata
+print(result.output)
+```
+
+## Vad händer här?
+
+- **System prompt**: instruktioner som gäller under hela konversationen och styr modellens beteende.
+- **User prompt**: själva frågan som skickas in vid varje `agent.run()`.
+- **`result.output`**: modellens svar som text.
 
