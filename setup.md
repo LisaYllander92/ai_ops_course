@@ -72,4 +72,4 @@ result
 print(result.output)
 ```
 
-## Ändringar jämfört med originalet
+
