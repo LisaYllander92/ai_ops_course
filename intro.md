@@ -143,3 +143,35 @@ Vad är AI? ──────────────┼─ Nivåer ───�
                                                └─ Datorseende
 ```
 
+# Översikt: Pydantic & PydanticAI
+
+## 1. Vad är Pydantic?
+
+**Pydantic** är ett populärt och extremt snabbt bibliotek för datavalidering och typ-hantering i Python, skrivet i Rust och Python. Det låter dig definiera datastrukturer med vanliga Python-typer (`type hints`).
+
+### Vad det är bra för:
+* **Datavalidering & Omvandling:** Tar emot ostrukturerad data (t.ex. JSON, inställningar, API-svar), omvandlar den till rätt Python-typer och kastar tydliga felmeddelanden om något saknas eller är ogiltigt.
+* **API-utveckling:** Fungerar som ryggrad för moderna webbramverk som **FastAPI**.
+* **Konfigurationshantering:** Säker och typsäker inläsning av miljövariabler (`pydantic-settings`).
+* **Prestanda:** Eftersom kärnan är skriven i Rust är valideringen extremt snabb.
+
+---
+
+## 2. Vad är PydanticAI?
+
+**PydanticAI** är ett agent-ramverk för Python skapat av samma team bakom Pydantic. Det är utformat för att underlätta bygget av AI-drivna applikationer och LLM-agenter med samma utvecklarupplevelse och typsäkerhet som FastAPI.
+
+### Vad det är bra för:
+* **Strukturerad output (Structured Data):** Tvingar språkmodeller (LLM:er) att returnera data som exakt matchar dina Pydantic-modeller istället för ostrukturerad text.
+* **Typsäkra agent-verktyg (Tools):** Gör det enkelt att ge AI-modellen tillgång till funktioner i din kod med automatisk validering av argumenten som modellen skickar.
+* **Modelloberoende:** Enkelt att växla mellan leverantörer som OpenAI, Anthropic (Claude), Google Gemini eller lokala modeller via Ollama utan att ändra koden.
+* **Produktionsredo:** Inbyggt stöd för streamade svar, enhetstestning (mocking av AI-svar) och spårbarhet via *Pydantic Logfire*.
+
+---
+
+## Sammanfattning
+
+| Bibliotek | Huvudsakligt syfte |
+| :--- | :--- |
+| **Pydantic** | Ser till att din **Python-data** är korrekt validerad och typsäker. |
+| **PydanticAI** | Ser till att **svar och verktygsanrop från AI-modeller** följer dina strikta regler. |
