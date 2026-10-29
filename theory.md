@@ -175,3 +175,31 @@ Vad är AI? ──────────────┼─ Nivåer ───�
 | :--- | :--- |
 | **Pydantic** | Ser till att din **Python-data** är korrekt validerad och typsäker. |
 | **PydanticAI** | Ser till att **svar och verktygsanrop från AI-modeller** följer dina strikta regler. |
+
+
+# Hur fungerar en LLM?
+
+## Naiv approach
+Det enklaste sättet att förutsäga nästa ord är att räkna statistik: hur ofta följer ord B efter ord A (n-gram-modeller)? Det fungerar för korta sammanhang men faller ihop när texten blir lång, eftersom modellen inte förstår betydelse eller längre samband, bara frekvenser.
+
+## Embeddings
+Ord (egentligen tokens, alltså ordbitar) omvandlas till vektorer, långa listor med tal. Ord med liknande betydelse hamnar nära varandra i det här "betydelserummet". Klassiskt exempel: kung − man + kvinna ≈ drottning. Det ger modellen ett sätt att räkna med mening istället för bara bokstäver.
+
+## Transformer-arkitekturen
+Kärnan är *self-attention*: varje token får "titta på" alla andra tokens i texten och avgöra vilka som är viktigast för att förstå just den. I meningen "Hunden jagade katten eftersom den var snabb" hjälper attention modellen att koppla "den" till rätt ord. Eftersom allt kan beräknas parallellt går det att träna på enorma textmängder, vilket gjorde det stora genombrottet möjligt (artikeln "Attention Is All You Need", 2017).
+
+## GPT – Generative Pre-trained Transformer
+- **Generative:** modellen genererar text, ett token i taget, genom att förutsäga nästa token.
+- **Pre-trained:** den tränas först på gigantiska mängder text (internet, böcker, kod) för att lära sig språk och allmänkunskap.
+- **Transformer:** arkitekturen ovan.
+
+Efter förträningen kan modellen fortsätta en text, men är ännu inte särskilt bra på att följa instruktioner.
+
+## RLHF – Reinforcement Learning from Human Feedback
+Här görs modellen till en användbar assistent. Människor rankar olika svar från modellen, och utifrån rankningen tränas en belöningsmodell som lär sig vad som uppfattas som hjälpsamt, korrekt och säkert. Sedan finjusteras språkmodellen med förstärkningsinlärning för att ge svar som får hög belöning.
+
+## LMM – Large Multimodal Model
+En stor modell som inte bara hanterar text utan även andra modaliteter som bilder, ljud och video. Olika typer av data omvandlas till embeddings i samma slags rum, så att modellen kan resonera över dem tillsammans, till exempel beskriva en bild eller svara på en fråga om ett diagram.
+
+## Sammanfattning av flödet
+Text → tokens → embeddings → transformer (attention) → sannolikhet för nästa token → förträning → RLHF → färdig assistent
