@@ -1,0 +1,204 @@
+STI
+ 
+Skip to content
+Program
+Kurser
+Så söker du
+För företag
+Läsvärt
+Om STI
+Kontakt
+YH-program · 2 år · Stockholm
+
+UX-designer
+Designa digitala upplevelser med människan i fokus.
+
+Lär dig förstå användarnas behov och omsätta dem till genomtänkta digitala lösningar med hjälp av research, prototyper, användartester och design.
+
+
+Omfattning
+
+2 år · 400 YH-poäng
+
+Studieform
+
+Stockholm · Heltid
+
+Status
+
+Pågående utbildning
+
+LIA
+
+20 veckor praktik
+
+YRKESROLLEN
+
+Vad gör en UX-designer?
+En UX-designer ser till att digitala tjänster fungerar för människorna som använder dem. Det kan handla om allt från en app eller webbplats till en e-handel eller en digital myndighetstjänst.
+
+UX-designern säkerställer både användaren upplevelse och tillgänglightet, och utvecklar lösningar som gör digitala produkter enklare, tydligare och mer användbara. Utifrån exempelvis intervjuer, observationer och tester tar UX-designern reda på vilka behov, problem och beteenden som finns. Därefter omsätts insikterna till skisser, prototyper och designförslag som testas och förbättras innan de utvecklas.
+
+Som UX-designer samarbetar du ofta nära utvecklare, designers, produktägare och andra specialister för att skapa digitala lösningar som är användbara, tillgängliga och skapar verkligt värde för användarna.
+
+
+Exempel på arbetsuppgifter
+
+En UX-designer kan arbeta med
+Användarundersökningar och behovsanalys
+Informationsstruktur och användarflöden
+Wireframes, prototyper och gränssnitt
+Användartester och utvärdering
+det får du med dig
+
+Om utbildningen
+Lär dig att skapa digitala tjänster som människor vill och kan använda.
+
+På UX-designer på STI utvecklar du både den strategiska förståelsen och de praktiska färdigheterna som krävs för att skapa digitala tjänster och produkter med användaren i fokus.
+
+Utbildningen bygger på ett projektbaserat arbetssätt där du arbetar med verklighetsnära uppgifter och utvecklar din förmåga att ta en idé hela vägen från användarbehov och research till prototyper, tester och färdig design. Du får arbeta med de metoder, verktyg och arbetssätt som används i branschen och utvecklar en portfolio som visar vad du kan.
+
+Programmet är två år på heltid och bedrivs på plats på STI i Liljeholmen, med nära koppling till arbetslivet genom projekt, gästföreläsningar och LIA (Lärande i arbete). Du har vanligtvis schemalagd undervisning 2–3 heldagar i veckan på plats, och övrig tid ägnar du åt självstudier, grupparbeten och uppgifter.
+
+Du får kompetens inom:
+förstå användarnas behov genom intervjuer, observationer och research
+planera och genomföra användartester
+skapa användarvänliga gränssnitt och digitala flöden
+strukturera information så att digitala tjänster blir enkla att använda
+ta fram prototyper och arbeta i moderna designverktyg
+utveckla digitala lösningar som är tillgängliga och användbara för fler
+arbeta enligt UX-processen – från idé och analys till färdig lösning
+samarbeta med utvecklare, designers och andra roller i agila projekt
+Programinnehåll
+
+Utbildningen omfattar 400 YH-poäng och kombinerar UX-metodik, research, interaktionsdesign, visuell design, teknik, kommunikation och praktik.
+
+År 1 - Grunderna i UX, metoder och praktiska verktyg ->
+Introduktion till studier och arbetsliv
+
+10 YH-poäng
+
+Introduktion till programmet, studierna och yrkesrollen.
+
+Interaktionsdesign
+
+50 YH-poäng
+
+Grunderna i kognition och beteendepsykologi
+Verktyg och metoder för interaktionsdesign
+Introduktion till GDPR, etik och integritetsfrågor
+AI inom UX
+Frontend
+
+20 YH-poäng
+
+Grundläggande kunskaper i HTML5, CSS3 och JavaScript
+Hur design levereras till frontendutvecklare
+Inblick i hur backend-system påverkar designbeslut
+UX research, tjänstedesign och användbarhetstestning
+
+65 YH-poäng
+
+Planera och genomföra användarintervjuer och analyser
+Skapa personas, scenarier, effektkartor och kundresor
+Utforma responsiva och testbara prototyper
+Använda testmetoder som think-aloud och card sorting
+Värdera och sammanställa resultat från användartester
+Visuell design
+
+30 YH-poäng
+
+Typografi, färglära och kontrast
+Designsystem och konceptvisualisering
+Skapa tillgängliga och användarvänliga gränssnitt
+Agil metodik och arbetssätt
+
+25 YH-poäng
+
+Agila begrepp som iterationer, user stories, standups, retrospektiv och backlog
+UX-designerns roll i ett agilt team
+Facilitera team samt ge och ta emot feedback
+Koppla kravställning till designlösningar
+
+År 2 – Fördjupning, LIA och examensarbete ->
+Kommunikation och facilitering
+
+25 YH-poäng
+
+Kommunicera och samarbeta med uppdragsgivare och beställare
+Leda möten och facilitera workshops
+Hantera konflikter professionellt
+Tjänstedesign, fortsättning
+
+30 YH-poäng
+
+Hypotesdriven utveckling och jobs-to-be-done-metodik
+Kundcentrerad kultur, nudging och gamification
+Generativ design och service blueprint
+UX-writing
+
+25 YH-poäng
+
+Klarspråk och UX-copywriting
+Informationsarkitektur och hur text påverkar användarupplevelsen
+Tillämpa tillgänglighetskrav, inklusive korrekt märkning och aria-attribut
+LIA
+
+100 YH-poäng
+
+20 veckors praktik på heltid hos en arbetsgivare.
+
+Examensarbete
+
+20 YH-poäng
+
+Självständigt examensarbete inom UX-design.
+
+
+Vanliga frågor
+
+Behörighetskrav
+Jenny Carlsson, utbildningsledare på STI
+
+Jenny Carlsson
+
+Utbildningsledare
+
+
+Mejla Jenny Carlsson →
+
+Elin Hynynen porträtt
+LIA på ATG | UX Designer
+
+
+En taggning på LinkedIn – så fick Elin LIA i designteamet på ATG
+Från visual merchandising till UX Designer – Elin hittade kombinationen av teknik och kundupplevelse och hörde av sig direkt.
+
+Upptäck STI
+
+Mer än en utbildning
+
+
+
+
+Utbildning nära arbetslivet
+På STI får du mer än kunskaper för ett nytt yrke. Du blir en del av en gemenskap där vi lär tillsammans, med stöd från engagerade utbildare och nära kontakt med arbetslivet.
+
+Vi har utbildat inom teknik sedan 1924. I dag kombinerar vi den erfarenheten med utbildningar som utvecklas tillsammans med branschen.
+
+Upptäck hur det är att studera på STI →
+
+Lär känna STI →
+
+STUDERA PÅ STI
+VÅRA PROGRAM
+ANTAGNING
+SAMARBETEN & FÖRETAG
+SAMARBETEN
+MER OM OSS
+OM STI
+KONTAKTA OSS
+Behandling av personuppgifter
+ Liljeholmstorget, 117 63 Stockholm
+ info@sti.se
+  
