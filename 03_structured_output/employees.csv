@@ -1,0 +1,11 @@
+name,age,salary,role,description
+Erik Andersson,28,42000,Systemutvecklare,Utvecklar och underhåller webbapplikationer i ett agilt team. Har erfarenhet av JavaScript och molnbaserade lösningar.
+Sara Nilsson,34,38000,IT-supporttekniker,"Hjälper kollegor med hårdvara, mjukvara och nätverksproblem. Ansvarar för supportärenden och användarutbildning."
+Lisa Bergman,29,35000,HR-assistent,"Stödjer HR-avdelningen med administration, anställningsavtal och introduktion av nya medarbetare. Ansvarar även för personalregister och schemaläggning."
+Johan Karlsson,45,52000,HR-chef,"Ansvarar för den strategiska HR-utvecklingen och personalpolitiken på företaget. Leder arbetet med arbetsmiljö, lönerevisioner och kompetensutveckling."
+Emma Lindberg,31,40000,Marknadsförare,Planerar och genomför marknadsföringskampanjer både digitalt och tryckt. Ansvarar för varumärkesbyggnad och kundkommunikation.
+Daniel Sjöberg,37,47000,Digital marknadsförare,Optimerar företagets närvaro i sociala medier och via sökmotorannonsering. Analyserar trafik och konverteringsdata för att förbättra resultatet.
+Maria Eriksson,42,55000,IT-säkerhetsspecialist,Arbetar med att skydda företagets IT-system mot intrång och dataläckage. Utför riskanalyser och säkerhetsutbildningar för personalen.
+Viktor Dahl,39,46000,Rekryteringsansvarig,Driver hela rekryteringsprocessen från annonsering till anställning av nya medarbetare. Bygger och underhåller kontaktnät med kandidater och externa samarbetspartners.
+Nina Olsson,50,58000,Kommunikationschef,"Ansvarar för företagets externa och interna kommunikationsstrategi. Leder presskontakt, innehållsproduktion och varumärkespositionering."
+Samuel Gustavsson,33,44000,Databasadministratör,"Förvaltar och optimerar företagets databaser för säkerhet och prestanda. Ansvarar för backup, återställning och datamigrering."
