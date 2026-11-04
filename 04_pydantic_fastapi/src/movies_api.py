@@ -3,17 +3,13 @@ from pydantic_ai import Agent
 from dotenv import load_dotenv
 from utils import query_duckdb
 from data_models import Movie, Prompt
-from model import nvidia_model
+from agent import movie_agent
 
 load_dotenv()
 
 app = FastAPI()
 
-agent = Agent(
-    model=nvidia_model("nvidia/nemotron-3.5-super-vl-120b-a12b"),
-)
-
-
+# Endpoint
 @app.get("/movies")
 async def read_movies():
     movies = query_duckdb("FROM movies;")
@@ -22,7 +18,7 @@ async def read_movies():
 
 @app.post("/movie")
 async def create_movie(query: Prompt):
-    result = await agent.run(query.prompt, output_type=Movie)
+    result = await movie_agent.run(query.prompt, output_type=Movie)
     movie = result.output
 
     # protect against SQL injection

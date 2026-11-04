@@ -1,11 +1,18 @@
 from pydantic_ai import Agent
 from model import nvidia_model
+from data_models import Movie
 
 movie_agent = Agent(
     model=nvidia_model("nvidia/nemotron-3.5-super-vl-120b-a12b"),
-    instructions="You are an expert in finding a movie based on a text"
+    instructions="You are an expert in finding a movie based on a text",
+    output_type=Movie,
 )
 
-# To test an agent in python script -> use run_sync()
-movie = movie_agent.run_sync("I'll be back")
-print(movie)
+# Be able to run as standalone script
+#__name__ is __main__ when run diractly
+# __name__ is 'agent' when imported
+if  __name__ == "__main__":
+
+    # To test an agent in python script -> use run_sync()
+    movie = movie_agent.run_sync("I'll be back")
+    print(movie)
