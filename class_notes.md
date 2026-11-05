@@ -265,4 +265,4 @@ dice_result.output
 
 ---
 
-       |
+
