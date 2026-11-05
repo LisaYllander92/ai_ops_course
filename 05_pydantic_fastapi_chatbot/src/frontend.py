@@ -34,6 +34,7 @@ def handle_user_input():
             json={
                 "question": prompt, "message_history": st.session_state.message_history
             },
+            timeout=60,
         ).json()  # Omvandlar svaret från JSON till en Python-dict
 
         # Uppdaterar historiken med den nya versionen från backend

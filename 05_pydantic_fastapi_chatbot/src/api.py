@@ -4,12 +4,6 @@ from data_models import ChatResponse, ChatRequest   # Datamodeller för inkomman
 
 app = FastAPI()  # Skapar själva API-applikationen (startas t.ex. med: uvicorn main:app --reload)
 
-# get endpoint to pick out chat history
-
-
-
-
-
 # Registrerar en POST-endpoint på adressen /chat (samma adress som Streamlit anropar).
 # response_model gör att FastAPI validerar svaret och dokumenterar det i /docs.
 @app.post("/chat", response_model=ChatResponse)
