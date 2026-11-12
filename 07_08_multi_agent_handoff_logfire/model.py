@@ -1,6 +1,3 @@
-# Make model into a function
-
-from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel 
 from pydantic_ai.providers.openai import OpenAIProvider
 import os

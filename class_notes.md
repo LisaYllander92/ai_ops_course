@@ -266,3 +266,40 @@ dice_result.output
 ---
 
 
+# LLMOps / AIOps / MLOps
+
+## MLOps (Machine Learning Operations)
+Metoder och verktyg för att **bygga, driftsätta och underhålla ML-modeller** i produktion. Fokus på hela modellens livscykel: datahantering, träning, versionshantering, CI/CD, övervakning och omträning.
+
+## LLMOps (Large Language Model Operations)
+En specialisering av MLOps för **stora språkmodeller** (som Claude eller GPT). Fokus på sådant som:
+- Prompthantering och versionering
+- Finjustering och RAG (retrieval-augmented generation)
+- Utvärdering av textkvalitet och hallucinationer
+- Kostnad per token, latens och säkerhetsfilter (guardrails)
+
+## AIOps (Artificial Intelligence for IT Operations)
+Skiljer sig mest av de tre: här **använder man AI för att sköta IT-drift**, snarare än att drifta AI. Exempel: automatisk anomalidetektion, rotorsaksanalys av incidenter och förutsägelse av driftstopp.
+
+## Skillnader i korthet
+
+| | **MLOps** | **LLMOps** | **AIOps** |
+|---|---|---|---|
+| **Vad hanteras?** | ML-modeller (generellt) | Språkmodeller | IT-infrastruktur och system |
+| **Riktning** | Drifta ML | Drifta LLM:er | AI *används för* drift |
+| **Typiska problem** | Dataförändring (drift), omträning | Prompts, hallucinationer, kostnad | Larmbrus, incidenter, kapacitet |
+| **Användare** | Dataforskare, ML-ingenjörer | AI-/applikationsutvecklare | Drift-/SRE-team |
+
+**Tumregel:** MLOps och LLMOps handlar om *att driva AI*. AIOps handlar om *att använda AI för att driva IT*.
+
+--- 
+
+# Multi-agent delegation
+- kan vara bra med fler agenter om de har olika uppgifter/syften men kan också göra att det tar längtre tid
+
+---
+# Lancedb och RAG
+
+
+---
+# Logfire
