@@ -1,0 +1,10 @@
+**/.venv
+**/__pycache__
+**/*.pyc
+.git
+.gitignore
+.env
+.logfire
+**/.pytest_cache
+**/ingestion.py
+**/pdfs_to_text.py
