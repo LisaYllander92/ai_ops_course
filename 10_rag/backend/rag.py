@@ -1,11 +1,24 @@
 from pydantic_ai import Agent
+from pydantic_ai.models.openai import OpenAIChatModel
+from pydantic_ai.providers.openai import OpenAIProvider
+from dotenv import load_dotenv
+import os
 from backend.data_models import RagResponse
 from backend.constants import VECTOR_DATABASE_PATH
 import lancedb
 
+load_dotenv()
+
 vector_db = lancedb.connect(uri=VECTOR_DATABASE_PATH)
 
-rag_agent = Agent(model="google:gemini-3.8-flash", retries=3, system_prompt=(
+model=OpenAIChatModel(
+    "nvidia/nemotron-3.5-super-vl-120b-a12b",
+    provider=OpenAIProvider(
+        base_url="https://integrate.api.nvidia.com/v1", api_key=os.environ["NVIDIA_API"],
+    ),
+)
+
+rag_agent = Agent(model=model, retries=2, system_prompt=(
         "You are an expert in rabbit races and knows how to distinguish between the rabbits",
         "Always answer based on the retrieved knowledge, but you can mix in your expertise to make the answer more coherent",
         "Don't hallucinate, rather say you can't answer it if the user prompts outside of the retrieved knowledge",
@@ -15,8 +28,9 @@ rag_agent = Agent(model="google:gemini-3.8-flash", retries=3, system_prompt=(
     output_type=RagResponse,
 )
 
+
 @rag_agent.tool_plain
-def retrieve_top_documents(query: str, k=3) -> str:
+def retrieve_top_documents(query: str, k: int=3) -> str:
     """
     Uses vector search to find closest k matching documents to the query
     """
