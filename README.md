@@ -56,3 +56,5 @@ FIRECRAWL_API_KEY=
 
 3. testa webscraing
 - klista in den url:en du vill ha och get code
+
+Note: kolla om man får scrapa sidan med /robots.txt
