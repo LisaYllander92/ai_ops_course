@@ -45,16 +45,50 @@ uv add pandas pydantic-ai ipykernel
 | uv python list         | lists available python versions                            |
 |                        |                                                            |
 
+# Web scraping with Firecrawl
 
-# Webscraping with FireCrawl
-1. skapa konto, kopiera nyckel till .env
-FIRECRAWL_API_KEY=
+## Setup
 
-2. testa "search the web"
-- get code
-- kopiera koden som finns (byt ut hårdkodade apinyckeln)
+### 1. Create an account and get an API key
 
-3. testa webscraing
-- klista in den url:en du vill ha och get code
+Sign up at [firecrawl.dev](https://www.firecrawl.dev), copy your API key and add it to your `.env` file:
 
-Note: kolla om man får scrapa sidan med /robots.txt
+```env
+FIRECRAWL_API_KEY=your_key_here
+```
+
+> **Note:** Never commit `.env` to Git. Make sure it is listed in `.gitignore`.
+
+## Try it out
+
+### 2. Search the web
+
+1. Open the **Search** playground in the Firecrawl dashboard.
+2. Run a query and click **Get code**.
+3. Copy the generated code into your project.
+4. Replace the hardcoded API key with the one from `.env`:
+
+```python
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+api_key = os.getenv("FIRECRAWL_API_KEY")
+```
+
+### 3. Scrape a web page
+
+1. Open the **Scrape** playground.
+2. Paste the URL of the page you want to scrape.
+3. Run it and click **Get code**.
+4. Copy the code and use the same `.env` approach for the API key.
+
+## Before you scrape
+
+Check that you are allowed to scrape the site by looking at its `robots.txt`:
+
+```
+https://example.com/robots.txt
+```
+
+Look for `Disallow` rules that cover the pages you want to scrape, and also check the site's terms of service.
