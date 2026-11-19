@@ -53,3 +53,6 @@ FIRECRAWL_API_KEY=
 2. testa "search the web"
 - get code
 - kopiera koden som finns (byt ut hårdkodade apinyckeln)
+
+3. testa webscraing
+- klista in den url:en du vill ha och get code
