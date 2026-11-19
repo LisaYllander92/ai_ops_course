@@ -44,3 +44,12 @@ uv add pandas pydantic-ai ipykernel
 | uv python install      | install python version                                     |
 | uv python list         | lists available python versions                            |
 |                        |                                                            |
+
+
+# Webscraping with FireCrawl
+1. skapa konto, kopiera nyckel till .env
+FIRECRAWL_API_KEY=
+
+2. testa "search the web"
+- get code
+- kopiera koden som finns (byt ut hårdkodade apinyckeln)
